@@ -2,45 +2,92 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<title>ARK OTO Senkron</title>
+<title>Gizlilik Politikası — ARK OTO Senkron</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   body { font-family: -apple-system, Segoe UI, Arial, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 16px; line-height: 1.6; color: #222; }
-  h1 { font-size: 1.6em; }
+  h1 { font-size: 1.5em; }
+  h2 { font-size: 1.1em; margin-top: 1.6em; }
   footer { margin-top: 48px; color: #777; font-size: 0.9em; }
-  a { color: #0a5; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 3px; }
 </style>
 </head>
 <body>
-<h1>ARK OTO Senkron</h1>
+<h1>Gizlilik Politikası</h1>
+<p><em>Son güncelleme: 24 Eylül 2026</em></p>
+
 <p>
-  Bu sayfa, <strong>ARK OTO</strong> işletmesinin kendi iç kullanımı için yazdığı
-  birkaç masaüstü programın (ARKOTO RANDEVU, ARK OTO SSH Performans, ARK OTO
-  BÜTÇE, Personel Takip) Google Drive erişimiyle ilgili bilgilendirme
-  sayfasıdır.
+  Bu politika, <strong>ARK OTO</strong>'nun kendi iç kullanımı için yazdığı
+  masaüstü programların (ARKOTO RANDEVU, ARK OTO SSH Performans, ARK OTO
+  BÜTÇE, Personel Takip — bundan sonra "Program") Google Drive erişimini
+  açıklar.
+</p>
+
+<h2>Kim kullanıyor?</h2>
+<p>
+  Bu Programlar halka açık değildir, indirilebilir bir uygulama mağazasında
+  yayınlanmamıştır. Yalnızca ARK OTO'nun kendi bilgisayarlarında,
+  işletmenin kendisine ait tek bir Google hesabıyla çalışır.
+</p>
+
+<h2>Hangi izin isteniyor, ne için?</h2>
+<p>
+  Program, Google'ın <code>drive.file</code> kapsamını (scope) ister. Bu
+  kapsam, Google'ın kendi tanımına göre <strong>sadece Programın
+  kendisinin oluşturduğu ya da kullanıcının Programa açıkça seçtirdiği
+  dosyalarla</strong> sınırlıdır — Google hesabındaki diğer dosyalara,
+  e-postaya, takvime ya da kişilere hiçbir erişimi yoktur.
 </p>
 <p>
-  Bu programlar <strong>halka açık bir ürün ya da hizmet değildir</strong>.
-  Yalnızca ARK OTO'nun kendi bilgisayarlarında, kendi Google hesabıyla
-  çalışır; tek amacı, programın ürettiği yedek/senkron dosyalarını
-  kullanıcının kendi Google Drive hesabına kaydetmektir (aynı kullanıcının
-  telefonundan erişebilmesi için).
+  Program bu izni tek bir amaç için kullanır: kendi ürettiği küçük bir
+  yedek/senkron dosyasını (randevu, performans raporu ya da bütçe verisinin
+  bir kopyası) kullanıcının kendi Google Drive'ına yazmak — böylece aynı
+  kullanıcı bu veriye telefonundan da bakabilsin. Bazı sürümlerde bu işlem
+  kullanıcının kendi OAuth izniyle, bazılarında (ör. ARKOTO RANDEVU, ARK OTO
+  SSH Performans) işletmeye ait ayrı bir servis hesabıyla yapılır — ikisi de
+  aynı tek Drive klasörüyle sınırlıdır.
 </p>
+
+<h2>Veri kiminle paylaşılıyor?</h2>
 <p>
-  Detaylar için <a href="gizlilik.html">gizlilik politikasına</a> bakınız.
+  <strong>Hiçbir veri üçüncü bir tarafla paylaşılmaz, satılmaz ya da
+  reklam amacıyla kullanılmaz.</strong> Yüklenen dosyalar, kullanıcının
+  kendi Google Drive hesabında kalır. Sadece randevu/telefon senkron
+  dosyaları, aynı işletmenin kendi telefon uygulamasının okuyabilmesi için
+  bir Drive bağlantısıyla paylaşılır (yine sadece o tek dosya, başka hiçbir
+  şey).
 </p>
-<p>Sorularınız için: <a href="mailto:fatihmehmetnegiz@gmail.com">fatihmehmetnegiz@gmail.com</a></p>
+
+<h2>Veri ne kadar süre saklanıyor?</h2>
+<p>
+  Dosyalar, kullanıcı kendi Google Drive'ından silene kadar orada kalır.
+  Program, kendi yazdığı dosya dışında Drive'daki hiçbir şeyi silmez ya da
+  değiştirmez.
+</p>
+
+<h2>İletişim</h2>
+<p>
+  Sorularınız için:
+  <a href="mailto:fatihmehmetnegiz@gmail.com">fatihmehmetnegiz@gmail.com</a>
+</p>
 
 <hr>
+<h2 style="color:#666">English summary</h2>
 <p style="color:#666">
-  <em>English:</em> This page describes the Google Drive access used by a
-  small set of internal desktop tools written for a single business (ARK
-  OTO). These are not a public product — they run only on the business's
-  own computers, under its own Google account, and use Drive access solely
-  to store the account owner's own backup/sync files. See the
-  <a href="gizlilik.html">privacy policy</a> for details.
+  This privacy policy covers a small set of internal desktop tools written
+  for a single business (ARK OTO). They are not a public product. They
+  request Google's <code>drive.file</code> scope only, which — per
+  Google's own definition — is limited to files the app itself creates or
+  that the user explicitly picks; it has no access to any other file,
+  email, calendar, or contact data. The only use of this access is to
+  write the app's own small backup/sync file to the account owner's Google
+  Drive so it can also be read from the same person's phone. No data is
+  shared with, sold to, or used for advertising by any third party. Files
+  remain in the user's own Drive until they delete them; the app never
+  touches any other file. Contact:
+  <a href="mailto:fatihmehmetnegiz@gmail.com">fatihmehmetnegiz@gmail.com</a>.
 </p>
 
-<footer>ARK OTO Senkron</footer>
+<footer>ARK OTO Senkron — Gizlilik Politikası</footer>
 </body>
 </html>
